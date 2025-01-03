@@ -39,7 +39,7 @@ yarn test
 To check for type errors, use:
 
 ```
-yarn tsc
+yarn ts
 ```
 
 ### Lint
