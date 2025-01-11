@@ -5,7 +5,7 @@ import 'jest-fetch-mock'
 import data from '@/data/data.json'
 import { Allowance } from '@/types/allowances'
 
-//mock card component 
+//mock card component
 interface CardProps {
   allowance: Allowance
 }
@@ -34,13 +34,13 @@ describe('List', () => {
       const cards = getAllByTestId('card')
       expect(cards).toHaveLength(data.length)
     })
+  })
 
-    it('renders allowance details correctly', async () => {
-      const { getByText } = render(<List />)
-      await waitFor(() => {
-        expect(getByText(data[0].name)).toBeInTheDocument()
-        expect(getByText(data[1].name)).toBeInTheDocument()
-      })
+  it('renders allowance details correctly', async () => {
+    const { getByText } = render(<List />)
+    await waitFor(() => {
+      expect(getByText(data[0].name)).toBeInTheDocument()
+      expect(getByText(data[1].name)).toBeInTheDocument()
     })
   })
 })

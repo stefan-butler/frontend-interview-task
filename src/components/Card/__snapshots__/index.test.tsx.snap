@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card renders as expected 1`] = `
+<div>
+  <div
+    class="border border-gray-200 shadow-sm rounded-lg w-[380px] h-[190px] flex flex-col justify-between"
+  >
+    <div
+      class="flex-grow p-5"
+    >
+      <h3
+        class="text-lg "
+      >
+        Learning & Development
+      </h3>
+      <p
+        class="text-sm text-gray-300 font-light"
+      >
+        Expense
+      </p>
+    </div>
+    <div
+      class="flex-grow px-5 mt-9"
+    >
+      <div
+        class="flex justify-between text-sm mb-1"
+      >
+        <p>
+          20
+          % utilised
+        </p>
+        <p
+          class="text-gray-300"
+        >
+          £
+          100.00
+           /
+           
+          Month
+        </p>
+      </div>
+      <div
+        class="w-full bg-gray-200 h-1 rounded-lg"
+      >
+        <div
+          class="bg-lime-400 h-1 rounded-lg"
+          style="width: 20%;"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
