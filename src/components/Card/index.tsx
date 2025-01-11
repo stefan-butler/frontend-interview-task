@@ -16,10 +16,10 @@ const Card = ( {allowance}: CardProps) => {
         }
       </div>
         {allowance.active && 
-          <div className="flex-grow px-5 mt-6">
+          <div className="flex-grow px-5 mt-9">
             <div className="flex justify-between text-sm mb-1">
               <p>{Math.round((Number(allowance.spent) / Number(allowance.amount)) *100)}% utilised</p>
-              <p className="text-gray-300">{allowance.currency}{allowance.amount} / {allowance.renewal.charAt(0).toUpperCase() + allowance.renewal.slice(1)}</p>
+              <p className="text-gray-300">{allowance.currency}{Number(allowance.amount).toFixed(2)} / {allowance.renewal.charAt(0).toUpperCase() + allowance.renewal.slice(1)}</p>
             </div>
             <div className="w-full bg-gray-200 h-1 rounded-lg">
               <div 
