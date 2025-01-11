@@ -15,8 +15,8 @@ const List = () => {
   }, [])
 
   return (
-    <div>
-      <h2>Allowances</h2>
+    <div className='p-7'>
+      <h2 className='text-green-500 font-semibold text-2xl mb-4'>Allowances</h2>
       <div>
         {allowances.map((allowance) => (
           <div key={allowance.id}>{JSON.stringify(allowance)}</div>
