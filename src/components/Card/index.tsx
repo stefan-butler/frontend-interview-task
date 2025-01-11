@@ -1,6 +1,9 @@
 import { Allowance } from "@/types/allowances";
+interface CardProps {
+  allowance: Allowance;
+}
 
-const Card = ({allowance}) => {
+const Card = ( {allowance}: CardProps) => {
 
   return (
     <div>
@@ -14,7 +17,7 @@ const Card = ({allowance}) => {
         <div>
           <div>
             <p>{Math.round((Number(allowance.spent) / Number(allowance.amount)) *100)}% utilised</p>
-            <p>{allowance.currency} {allowance.amount} / {allowance.renewal.charAt(0).toUpperCase() + allowance.renewal.slice(1)}</p>
+            <p>{allowance.currency}{allowance.amount} / {allowance.renewal.charAt(0).toUpperCase() + allowance.renewal.slice(1)}</p>
           </div>
           <div className="w-full bg-gray-200 h-1 rounded-lg">
             <div 
