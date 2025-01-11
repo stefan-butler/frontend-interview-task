@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Allowance } from '@/types/allowances'
+import Card from '../Card';
 
 const List = () => {
   const [allowances, setAllowances] = useState<Allowance[]>([])
@@ -19,7 +20,7 @@ const List = () => {
       <h2 className='text-green-500 font-semibold text-2xl mb-4'>Allowances</h2>
       <div>
         {allowances.map((allowance) => (
-          <div key={allowance.id}>{JSON.stringify(allowance)}</div>
+          <Card key={allowance.id} allowance={allowance}/>
         ))}
       </div>
     </div>
